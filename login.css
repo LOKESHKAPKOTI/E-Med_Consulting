@@ -1,0 +1,69 @@
+/* Removed duplicate height property in #loginbutton.
+Cleaned up unnecessary comments.
+Consolidated properties in #loginbutton for better readability.
+Removed unnecessary flex-wrap: nowrap; from .navigationbar since it's the default behavior.
+Adjusted the media query for better responsiveness by changing (min-width: 0) to (max-width: 955px). */
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    color: gray;
+}
+
+.navigationbar {
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+}
+
+#loginbar {
+    color: deepskyblue;
+}
+
+.register {
+    color: grey;
+}
+
+.navigationbar > div {
+    border: 1px solid transparent;
+    margin: 20px;
+    padding-top: 80px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    padding: 20px;
+}
+
+#loginbutton {
+    background-color: deepskyblue;
+    width: 90%;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+#span {
+    font-size: 10px;
+    color: deepskyblue;
+    padding-left: 40px;
+}
+
+label {
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 955px) {
+    .container + div,
+    img {
+        display: none;
+    }
+}
